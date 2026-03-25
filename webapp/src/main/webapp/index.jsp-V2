@@ -6,33 +6,18 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #667eea, #764ba2);
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #667eea, #764ba2);
-      overflow: hidden;
     }
-
-    /* Background icons */
-    .bg-icons img {
-      position: absolute;
-      width: 80px;
-      opacity: 0.15;
-    }
-
-    .icon1 { top: 10%; left: 10%; }
-    .icon2 { top: 20%; right: 10%; }
-    .icon3 { bottom: 15%; left: 15%; }
-    .icon4 { bottom: 10%; right: 10%; }
 
     .container {
-      position: relative;
       width: 400px;
       margin: 50px auto;
       background: #ffffff;
       padding: 25px;
       border-radius: 10px;
       box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
-      z-index: 1;
     }
 
     h1 {
@@ -66,6 +51,7 @@
       box-shadow: 0 0 5px #667eea;
     }
 
+    /* Password row */
     .password-row {
       display: flex;
       gap: 15px;
@@ -113,14 +99,6 @@
 
 <body>
 
-<!-- Background Icons -->
-<div class="bg-icons">
-  <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" class="icon1" title="Linux">
-  <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" class="icon2" title="Docker">
-  <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" class="icon3" title="Kubernetes">
-  <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" class="icon4" title="DevOps">
-</div>
-
 <form action="action_page.php">
   <div class="container">
 
@@ -137,6 +115,7 @@
     <label for="email">Enter Email</label>
     <input type="email" placeholder="Enter Email" name="email" id="email" required>
 
+    <!-- Password Side by Side -->
     <div class="password-row">
 
       <div class="field">
