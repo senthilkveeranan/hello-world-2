@@ -8,15 +8,17 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #667eea, #764ba2);
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
       overflow: hidden;
     }
 
-    /* Background icons */
+    /* Background icons (dark mode) */
     .bg-icons img {
       position: absolute;
-      width: 80px;
-      opacity: 0.15;
+      width: 90px;
+      opacity: 0.08;
+      filter: brightness(0) invert(1); /* makes icons white */
     }
 
     .icon1 { top: 10%; left: 10%; }
@@ -26,28 +28,29 @@
 
     .container {
       position: relative;
-      width: 400px;
-      margin: 50px auto;
-      background: #ffffff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+      width: 420px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
       z-index: 1;
     }
 
     h1 {
       text-align: center;
-      color: #333;
+      color: #00d4ff;
     }
 
     p {
       text-align: center;
-      color: #666;
+      color: #ccc;
     }
 
     label {
       font-weight: bold;
-      color: #444;
+      color: #ddd;
     }
 
     input {
@@ -55,15 +58,17 @@
       padding: 10px;
       margin-top: 5px;
       margin-bottom: 15px;
-      border: 1px solid #ccc;
+      border: 1px solid #444;
       border-radius: 6px;
+      background: #111;
+      color: #fff;
       transition: 0.3s;
     }
 
     input:focus {
-      border-color: #667eea;
+      border-color: #00d4ff;
       outline: none;
-      box-shadow: 0 0 5px #667eea;
+      box-shadow: 0 0 8px #00d4ff;
     }
 
     .password-row {
@@ -80,17 +85,19 @@
     .registerbtn {
       width: 100%;
       padding: 12px;
-      background: #667eea;
-      color: white;
+      background: #00d4ff;
+      color: #000;
       border: none;
       border-radius: 6px;
       font-size: 16px;
       cursor: pointer;
       transition: 0.3s;
+      font-weight: bold;
     }
 
     .registerbtn:hover {
-      background: #5a67d8;
+      background: #00aacc;
+      box-shadow: 0 0 10px #00d4ff;
     }
 
     .signin {
@@ -99,7 +106,7 @@
     }
 
     a {
-      color: #667eea;
+      color: #00d4ff;
       text-decoration: none;
       font-weight: bold;
     }
@@ -113,18 +120,18 @@
 
 <body>
 
-<!-- Background Icons -->
+<!-- DevOps Background Icons -->
 <div class="bg-icons">
-  <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" class="icon1" title="Linux">
-  <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" class="icon2" title="Docker">
-  <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" class="icon3" title="Kubernetes">
-  <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" class="icon4" title="DevOps">
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" class="icon1">
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" class="icon2">
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" class="icon3">
+  <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" class="icon4">
 </div>
 
 <form action="action_page.php">
   <div class="container">
 
-    <h1>DevOps Learning Register</h1>
+    <h1>DevOps Register</h1>
     <p>Create your account</p>
     <hr>
 
